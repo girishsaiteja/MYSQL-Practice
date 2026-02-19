@@ -166,3 +166,10 @@ WHERE score != 0
 GROUP BY country
 HAVING AVG(score) > 430
 
+/* ==============================================================================
+   DISTINCT
+=============================================================================== */
+
+-- Return Unique list of all countries
+SELECT DISTINCT country
+FROM customers
