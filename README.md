@@ -5,7 +5,7 @@ This repository contains MySQL practice queries and database concepts covering j
 ## Topics Covered
 - Data Definition (CREATE, ALTER, DROP)
 - Data Manipulation (INSERT, UPDATE, DELETE)
-- JOIN Operations
+- JOIN & SETS Operations
 - GROUP BY & HAVING
 - Subqueries
 - Window Functions
