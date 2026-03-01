@@ -40,3 +40,18 @@ VALUES (8, 'Max', 'USA', 368)
 INSERT INTO customers 
 VALUES 
     (9, 'Andreas', 'Germany', NULL)
+
+-- Insert a record with only id and first_name (other columns will be NULL or default values)
+INSERT INTO customers (id, first_name)
+VALUES 
+    (10, 'Sahra')
+
+/* #2 Method: INSERT DATA USING SELECT - Moving Data From One Table to Another */
+-- Copy data from the 'customers' table into 'persons'
+INSERT INTO persons (id, person_name, birth_date, phone)
+SELECT
+    id,
+    first_name,
+    NULL,
+    'Unknown'
+FROM customers
